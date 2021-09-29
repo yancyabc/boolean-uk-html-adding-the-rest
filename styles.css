@@ -1,0 +1,124 @@
+body {
+  font-family: sans-serif;
+}
+
+.main {
+  border: 1px solid blue;
+  display: grid;
+  grid-template:
+    "top top top" 50px
+    "left middle right" 600px /
+    100px 1fr 100px;
+  gap: 10px;
+  margin-left: 50px;
+  margin-right: 50px;
+  background-color: lightgrey;
+  padding: 0px 20px 0px 20px;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr 5fr 3fr;
+  background: green;
+  grid-area: top;
+}
+
+.box1,
+.box2,
+.box3 {
+  border: dotted blue 2px;
+  padding: 10px;
+  margin-right: 5px;
+  border-radius: 5px;
+}
+
+.box3 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.searchBox {
+  border: solid 2px black;
+  padding: 6px;
+  border-radius: 5px;
+  width: 60px;
+  height: 8px;
+}
+
+.link1 {
+  border: dotted 2px pink;
+  padding: 10px;
+  margin-right: 5px;
+}
+
+.left1 {
+  background: pink;
+  grid-area: left;
+  border: dotted blue 2px;
+  height: 300px;
+}
+
+.left2 {
+  border: dotted green 2px;
+  display: grid;
+  padding: 20px;
+  height: 150px;
+  width: 30px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+.left3 {
+  border: dotted green 2px;
+  padding: 10px;
+  margin-top: 5px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.middle1 {
+  background: lightblue;
+  grid-area: middle;
+  border: dotted blue 2px;
+  height: 150px;
+}
+
+.middleProfile {
+  border: dotted 2px green;
+  padding: 10px;
+  margin-top: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  display: grid;
+  grid-template-rows: 1fr, 1fr;
+}
+
+.circleProfile {
+  border: dotted red 2px;
+  padding: 10px;
+  border-radius: 50px;
+  height: 10px;
+  width: 11px;
+}
+
+.squareProfile {
+  border: dotted red 2px;
+  padding: 10px;
+}
+
+.right1 {
+  background: lightgreen;
+  grid-area: right;
+  border: dotted blue 2px;
+  height: 150px;
+}
+
+.right2 {
+  display: grid;
+  border: dotted green 2px;
+  padding: 10px;
+  margin-top: 5px;
+  margin-left: 2px;
+  margin-right: 2px;
+}
